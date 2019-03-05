@@ -20,7 +20,7 @@ class getData:
 
 	def scrape(self):	
 		try:
-			print "scraping www.cnn.com , please wait as it might take a while :)"
+			print("scraping www.cnn.com , please wait as it might take a while :)")	
 			driver.get('https://edition.cnn.com/')
 			element = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.TAG_NAME, "h2")))	
 			source = driver.page_source
