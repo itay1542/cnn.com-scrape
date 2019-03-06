@@ -1,3 +1,5 @@
+
+#111 lines (74 sloc) 2.54 KB
 #!usr/bin/env
 
 from bs4 import BeautifulSoup
@@ -9,11 +11,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
-
 import re
 
+
 CNN = 'https://edition.cnn.com/'
-webdriver=webdriver.Chrome('/usr/bin/chromedriver') 
+webdriver=webdriver.Chrome() 
 
 
 class GetData:
@@ -107,4 +109,3 @@ class GetData:
 		
 
 GetData(CNN).scrape()
-
